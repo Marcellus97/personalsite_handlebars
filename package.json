@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.15",
+    "update": "^0.7.4"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "name": "personalsite_handlebars",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcellus97/personalsite_handlebars.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marcellus97/personalsite_handlebars/issues"
+  },
+  "homepage": "https://github.com/Marcellus97/personalsite_handlebars#readme"
+}
