@@ -1,6 +1,15 @@
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 
+let PORT = 80;
+let HOST = '0.0.0.0';
+
+if (process.env.NODE_ENV === 'production') {
+    PORT = process.env.HOST;
+    PORT = process.env.PORT;
+}
+
+
 const app = express();
 
 app.set('view engine', 'handlebars');
@@ -16,6 +25,10 @@ app.use('/static', express.static('static'));
 app.get('/', (req, res) => {
     res.render('home');
 });
+
+app.get('/favicon.ico', (req, res) => {
+    res.sendFile(__dirname + '/static/img/favicon.ico');
+})
 
 
 // handle 404
